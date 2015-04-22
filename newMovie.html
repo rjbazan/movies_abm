@@ -1,0 +1,35 @@
+
+<div class="form-group">
+    <label for="movieName" class="col-md-4 control-label">Title</label>
+    <div class="col-md-6">
+        <input ng-model="movie.name" class="form-control" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="year" class="col-md-4 control-label">Year</label>
+    <div class="col-md-6">
+        <input ng-model="movie.releaseYear" class="form-control"/>
+    </div>
+</div>
+<div class="form-group">
+    <label for="director" class="col-md-4 control-label">URL</label>
+    <div class="col-md-6">
+        <input ng-model="movie.url" class="form-control"/>
+    </div>
+</div>
+<div class="form-group">
+    <label for="genre" class="col-md-4 control-label">Rating</label>
+    <div class="col-md-6">
+        <input type="text" ng-model="movie.averageRating" class="form-control"/>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label"></label>
+    <div class="col-md-4">
+        <input type="submit" class="btn btn-primary" value="Save" ng-click="save()"/>
+        <input type="submit" class="btn btn-secondary" value="Cancel" ng-click="cancel()"/>  
+    </div>
+    
+        
+    
+</div>

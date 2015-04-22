@@ -1,0 +1,16 @@
+<div class="margin-top">
+    <a class="btn btn-success  "  ng-click="" href="#/newMovies">New Movie</a>
+  </div>
+    <div class="col-md-12 column list-group" >
+        <div class="list-group-item" ng-repeat="movie in movies">
+            <div><strong>Title: </strong>{{ movie.name }}</div>
+            <div><strong>Year: </strong>{{ movie.releaseYear }}</div>
+            
+            <div><strong>URL: </strong> {{ movie.url }}</div>
+            <div class="margin-bottom">
+                <strong>Rating: </strong>{{ movie.averageRating }}
+                <button class="btn btn-danger pull-right RbtnMargin"  ng-click="delMovie($index)">Delete</button>
+                <button class="btn btn-primary pull-right RbtnMargin margin-right" ng-click="editMovie($index)">Edit</button>
+            </div>
+        </div>
+    </div>
